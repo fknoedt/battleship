@@ -1,8 +1,9 @@
 <?php
 
 /**
- * Class TicTacToe
- * This was a live coding challenge to
+ * Class TicTacToe sketch
+ * This code was implemented during an interview with the screen shared
+ * It was required to implement a simple tic-tac-toe board and basic prints, moves and check methods
  */
 class TicTacToe
 {
@@ -113,27 +114,23 @@ class TicTacToe
 $ttt = new TicTacToe();
 
 echo "1) print an empty board: " . PHP_EOL;
-$ttt->print();
+echo $ttt->print();
 
-echo "";
+echo PHP_EOL . PHP_EOL;
+
+echo "2) random manual move: " . PHP_EOL;
 $ttt->move(1, 2, 'X');
-
-echo $ttt->isBoardFull() ? 'yes' : 'no';
-
-while (true) {
-
-    $ttt->randomAiMove();
-    echo $ttt->print();
-
-}
-
-/*$ttt->move(1, 2, 'X');
 
 echo $ttt->print();
 
+echo PHP_EOL . PHP_EOL;
+
+echo "3) Is the board full? ";
+echo $ttt->isBoardFull() ? 'yes' : 'no';
+
+echo PHP_EOL . PHP_EOL;
+
+echo "4) Random machine move: " . PHP_EOL;
 $ttt->randomAiMove();
 
-echo $ttt->print();*/
-
-
-
+echo $ttt->print();
